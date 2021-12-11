@@ -67,7 +67,7 @@ Publikasi mengenai projek ini bisa dilihat di: http://jurnal.umus.ac.id/index.ph
 Jika kamu memanfaatkan repositori ini dalam publikasi akademis, kami sangat mengapresiasi sitasi ke paper berikut:
 
     @article{j.ilm.intech:v03:02-556,
-    author  = {Wildan Fariq Abdillah, Agyztia Premana, Raden Mohamad Herdian Bhakti}
+    author  = {Wildan Fariq Abdillah, Agyztia Premana, Raden Mohamad Herdian Bhakti},
     title   = {Analisis Sentimen Penanganan Covid-19 dengan Support Vector Machine: Evaluasi Leksikon dan Metode Ekstraksi Fitur},
     journal = {Jurnal Ilmiah Intech: Information Technology Journal of UMUS},
     year    = {2021},
