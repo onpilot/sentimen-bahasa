@@ -2,8 +2,8 @@
 [![Python 3.7|3.8|3.9](https://img.shields.io/badge/Python-3.7%2F3.8%2F3.9-blue.svg)](https://www.python.org/downloads/)
 [![GitHub license](https://img.shields.io/github/license/onpilot/sentimen-bahasa.svg)](https://github.com/onpilot/sentimen-bahasa/blob/master/LICENSE)
 
-Implementasi analisis sentimen untuk teks berbahasa Indonesia di media sosial dengan Python di `JupyterLab`.
-> ###### _Sentiment analysis implementation using Python in `JupyterLab`. Primarily made for dealing with text in social media using Indonesian language (bahasa Indonesia). **\*Note:** jupyter notebooks with English documentation can be found in `ipynb-en` folder._
+Implementasi analisis sentimen untuk mengevaluasi performa leksikon dan metode ekstraksi fitur pada teks berbahasa Indonesia dengan Python di `JupyterLab`.
+> ###### _Sentiment analysis implementation to evaluate lexicon and extraction feature methods performance using Python in `JupyterLab`. Primarily made for dealing with text in social media using Indonesian language (bahasa Indonesia). **\*Note:** jupyter notebooks with English documentation can be found in `ipynb-en` folder._
 
 ## Set
 - **Dataset:** cuitan Twitter berbahasa Indonesia mengenai sentimen penanganan covid-19 dari [Prastyo et al.](https://dx.doi.org/10.20473/jisebi.6.2.112-122) untuk data aspek umum;
@@ -14,7 +14,7 @@ Implementasi analisis sentimen untuk teks berbahasa Indonesia di media sosial de
 - **Classifier:** `SVM` dengan *linear kernel*.
 
 ## tl;dr
-Repositori ini dibuat untuk mengimplementasikan analisis sentimen dengan pemelajaran semisupervisi—menggabungkan *pendekatan berbasis leksikon* dan *pendekatan berbasis pemelajaran mesin*. Setiap *jupyter notebook (ipynb)* disertai dengan petunjuk. Algoritma dibuat dengan memanfaatkan modul `RegEx` bawaan Python dan library [`NLTK`](https://www.nltk.org/), [`Scikit-learn`](https://scikit-learn.org/), juga [`imbalanced-learn`](https://imbalanced-learn.org/). Validasi dilakukan dengan `k-Fold cv` setelah sebelumnya data disintesis (*oversampling*) dengan *borderline SMOTE SVM* atau `SVM-SMOTE`.
+Repositori ini dibuat untuk mengevaluasi performa leksikon dan metode ekstraksi fitur pada analisis sentimen teks berbahasa Indonesia mengenai penanganan Covid-19 dengan *Support Vector Machine (SVM)*. Pendekatan analisis sentimen dilakukan dengan pemelajaran semisupervisi—menggabungkan *pendekatan berbasis leksikon* dan *pendekatan berbasis pemelajaran mesin*. Setiap *jupyter notebook (ipynb)* disertai dengan petunjuk. Algoritma dibuat dengan memanfaatkan modul `RegEx` bawaan Python dan library [`NLTK`](https://www.nltk.org/), [`Scikit-learn`](https://scikit-learn.org/), juga [`imbalanced-learn`](https://imbalanced-learn.org/). Validasi dilakukan dengan `k-Fold cv` setelah sebelumnya data disintesis (*oversampling*) dengan *borderline SMOTE SVM* atau `SVM-SMOTE`.
 
 ## Algoritma yang termasuk
 - [x] Pembersihan kata/prapengolahan teks
@@ -37,17 +37,16 @@ Repositori ini dibuat untuk mengimplementasikan analisis sentimen dengan pemelaj
 ## Instalasi
 **Prasyarat**
 
-`pip3 install -r requirements.txt`
+instal *package* satu per satu
 
-atau instal *package* satu per satu
-
-`pip3 install --user --upgrade [nama package]`
+`pip3 install --user --upgrade [nama package]` atau
 
 **Clone Repositori**
 
 ```bash
 git clone https://github.com/onpilot/sentimen-bahasa.git
 cd sentimen-bahasa
+pip3 install -r requirements.txt
 jupyter-lab
 ```
 
@@ -89,4 +88,6 @@ Jika kamu memanfaatkan repositori ini dalam publikasi akademis, kami sangat meng
 - [ ] python code coverage
 
 ## Bacaan Lanjut
-> Silakan cek repositori ini, ya: #https://github.com/louisowen6/NLP_bahasa_resources #https://github.com/makcedward/nlp #https://github.com/keon/awesome-nlp
+- https://github.com/louisowen6/NLP_bahasa_resources
+- https://github.com/makcedward/nlp
+- https://github.com/keon/awesome-nlp
